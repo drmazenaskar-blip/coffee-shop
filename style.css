@@ -291,6 +291,10 @@ header .container nav ul li a:hover {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
+
+    .hero .container .hero-img img {
+        animation: up 1s alternate infinite;
+    }
 }
 
 /* ========================================================= */
@@ -456,6 +460,34 @@ header .container nav ul li a:hover {
     cursor: pointer;
 }
 
+.menu .container .card:first-child,
+.menu .container .card:nth-child(10),
+.menu .container .card:nth-child(6),
+.menu .container .card:nth-child(11),
+.menu .container .card:nth-child(5)
+{
+    border: 2px solid rgb(15, 177, 206);
+    position: relative;
+
+}
+.menu .container .card:first-child::after,
+.menu .container .card:nth-child(10)::after,
+.menu .container .card:nth-child(6)::after,
+.menu .container .card:nth-child(11)::after,
+.menu .container .card:nth-child(5)::after
+{
+    content: "Most Popular";
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translate(-50% ,-50%);
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius:10px;
+    background-color: rgb(15, 177, 206);
+    color: white;
+}
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
