@@ -872,7 +872,7 @@ footer ul li a:hover {
     letter-spacing: 1px;
 }
 
-.copyright span {
+.copyright span a {
     color: #d19a66;
     font-weight: bold;
     text-transform: uppercase;

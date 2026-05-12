@@ -49,8 +49,12 @@
                     </p>
                     <h1>time discover coffee house</h1>
                     <p class="description">
-                        "We care about quality and sustainability, sourcing ethically and using eco-friendly
-                        practices—because great coffee should make a difference."
+                        At Caffeine shop, we believe that coffee is more than just a drink; it's an experience that
+                        brings
+                        people together. Nestled in the heart of the city, our cafe offers a serene escape where premium
+                        ethically-sourced beans meet artistic brewing. Whether you're here to work, relax, or celebrate,
+                        we
+                        provide the perfect
                     </p>
                     <button type="button" class="btn-explore">expoler more <i
                             class="fa-solid fa-cart-shopping"></i></button>
@@ -203,7 +207,8 @@
                     <div class="card-content">
                         <h3>Caramel Macchiato</h3>
                         <p>Freshly steamed milk with vanilla-flavored syrup marked with espresso and topped with a
-                            caramel drizzle.</p>
+                            caramel drizzle.
+                        </p>
                     </div>
                     <span>$16.50</span>
                 </div>
@@ -333,14 +338,18 @@
                 </div>
                 <div class="contact-section">
                     <h2>booke a table</h2>
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="tel" placeholder="Phone Number (e.g. 01xxxxxxxxx)" required>
+                    <form action="https://formsubmit.co/dr.mazen.askar@gmail.com" method="POST">
+
+                        <input type="text" name="name" placeholder="Your Name" required>
+
+                        <input type="email" name="email" placeholder="Your Email" required>
+
+                        <input type="tel" name="phone" placeholder="Phone Number (e.g. 01xxxxxxxxx)" required>
 
                         <div class="form-row">
-                            <input type="date" required>
-                            <select required>
+                            <input type="date" name="date" required>
+
+                            <select name="time" required>
                                 <option value="" disabled selected>Select Time</option>
                                 <option value="08:00">08:00 AM</option>
                                 <option value="12:00">12:00 PM</option>
@@ -349,7 +358,7 @@
                             </select>
                         </div>
 
-                        <select required>
+                        <select name="people" required>
                             <option value="" disabled selected>Number of People</option>
                             <option value="1">1 Person</option>
                             <option value="2">2 People</option>
@@ -357,8 +366,13 @@
                             <option value="6">6+ People</option>
                         </select>
 
-                        <textarea placeholder="Special Request (e.g. Birthday, Window seat...)" rows="4"></textarea>
-                        <button class="btn-contact" type="submit">Book a Table</button>
+                        <textarea name="request" placeholder="Special Request (e.g. Birthday, Window seat...)"
+                            rows="4"></textarea>
+
+                        <button class="btn-contact" type="submit">
+                            Book a Table
+                        </button>
+
                     </form>
                 </div>
             </div>
@@ -372,10 +386,8 @@
             <div class="footer-content">
                 <h4>About Info</h4>
                 <p>
-                    At Caffeine shop, we believe that coffee is more than just a drink; it's an experience that brings
-                    people together. Nestled in the heart of the city, our cafe offers a serene escape where premium
-                    ethically-sourced beans meet artistic brewing. Whether you're here to work, relax, or celebrate, we
-                    provide the perfect
+                    "We care about quality and sustainability, sourcing ethically and using eco-friendly
+                    practices—because great coffee should make a difference."
                 </p>
                 <ul class="footer-content-link">
                     <li><i class="fa-solid fa-map-location-dot"></i> <span>Address : Giza Egypt</span></li>
@@ -406,7 +418,8 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright &copy; 2026 All Rights Reserved | Made with ❤️ by <span>DR-Mazen</span></p>
+            <p>Copyright &copy; 2026 All Rights Reserved | Made with ❤️ by <span><a
+                        href="https://github.com/drmazenaskar-blip" target="_blank">DR-Mazen</a></span></p>
         </div>
     </footer>
 </body>
